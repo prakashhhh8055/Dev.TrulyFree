@@ -18,10 +18,9 @@ public class TC001_SignupViaEmailTest extends BaseClass {
 	{
 		logger.info("*****Started TC001_SignupViaEmailTest******");
 		HomePage hp=new HomePage(driver);
-		hp.handlePopupIfPresent();
-		hp.clickReject();
+		//hp.clickReject();
 		hp.clickLogin();
-		
+		Thread.sleep(4000);
 		SigninViaPhoneNumber sp=new SigninViaPhoneNumber(driver);
 		sp.clickSignup();
 		

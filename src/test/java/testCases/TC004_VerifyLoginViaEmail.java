@@ -11,17 +11,16 @@ import testBase.BaseClass;
 public class TC004_VerifyLoginViaEmail extends BaseClass {
 	
 	@Test
-	public void VerifyLoginViaEmail()
+	public void VerifyLoginViaEmail() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
-		hp.clickReject();
+		//hp.clickReject();
 		hp.clickLogin();
-		
+
 		SigninViaPhoneNumber sp=new SigninViaPhoneNumber(driver);
 		sp.clickEmail();
 		
-		
-		LoginViaEmail le=new LoginViaEmail(driver);
+		LoginViaEmail le=new LoginViaEmail(driver,p);
 		le.setEmail();
 		le.setPassword();
 		le.clickContinue();

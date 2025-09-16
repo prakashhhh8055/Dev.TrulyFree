@@ -11,10 +11,11 @@ import testBase.BaseClass;
 public class LoginViaEmail extends BasePage{
 
 	BaseClass bc=new BaseClass();
-	Properties p=new Properties();
-	public LoginViaEmail(WebDriver driver) 
+	private Properties p;   // keep a reference
+	public LoginViaEmail(WebDriver driver,Properties p) 
 	{
 		super(driver);
+		this.p=p;
 	}
 	
 	@FindBy(xpath="//input[@id='standard-email']") WebElement txtEmail;
