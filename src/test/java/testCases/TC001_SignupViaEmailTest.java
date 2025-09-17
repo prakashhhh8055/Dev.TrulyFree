@@ -28,15 +28,16 @@ public class TC001_SignupViaEmailTest extends BaseClass {
 		su.clickEmail();
 		
 		SignupViaEmail se=new SignupViaEmail(driver);
-		se.setEmail();
-		se.setPassword();
+		BaseClass bc=new BaseClass();
+		se.setEmail(bc.randomString()+"@gmail.com");
+		se.setPassword(bc.randomAlphaNumeric());
 		se.selectTCAndPrivacy();
 		se.clickContinue();
 		
 		AccountInfo ac=new AccountInfo(driver);
-		ac.setFirstName();
-		ac.setLastName();
-		ac.setPhonenumber();
+		ac.setFirstName(bc.randomString());
+		ac.setLastName(bc.randomString());
+		ac.setPhonenumber(bc.generatePlainUSPhone());
 		ac.clickDone();
 		Thread.sleep(10000);
 		

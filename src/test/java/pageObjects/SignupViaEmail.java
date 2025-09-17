@@ -8,7 +8,6 @@ import testBase.BaseClass;
 
 public class SignupViaEmail extends BasePage {
 
-	BaseClass bc=new BaseClass();
 	public SignupViaEmail(WebDriver driver)
 	{
 		super(driver);
@@ -21,14 +20,14 @@ public class SignupViaEmail extends BasePage {
 	@FindBy(xpath="//button[normalize-space()='CONTINUE']") WebElement btnContinue;
 	
 	
-	public void setEmail()
+	public void setEmail(String email)
 	{
-		txtEmail.sendKeys(bc.randomString()+"@gmail.com");
+		txtEmail.sendKeys(email);
 	}
 	
-	public void setPassword()
+	public void setPassword(String pwd)
 	{
-		txtPassword.sendKeys(bc.randomAlphaNumeric());
+		txtPassword.sendKeys(pwd);
 	}
 	
 	public void selectTCAndPrivacy()

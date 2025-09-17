@@ -9,9 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import testBase.BaseClass;
 
 public class SigninViaPhoneNumber extends BasePage {
-
-	BaseClass bc=new BaseClass();
-	Properties p=new Properties();
+	
 	public SigninViaPhoneNumber(WebDriver driver) {
 		super(driver);
 	}
@@ -21,9 +19,9 @@ public class SigninViaPhoneNumber extends BasePage {
 	@FindBy(xpath="//button[normalize-space()='CONTINUE']") WebElement btnContinue;
 	@FindBy(xpath="//span[normalize-space()='Email']") WebElement linkEmail;
 	
-	public void setPhoneNumber()
+	public void setPhoneNumber(String phonenumber)
 	{
-		txtPhoneNumber.sendKeys(p.getProperty("phonenumber"));
+		txtPhoneNumber.sendKeys(phonenumber);
 	}
 	
 	public void clickContinue()

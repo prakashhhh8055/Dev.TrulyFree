@@ -7,8 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import testBase.BaseClass;
 
 public class SignupViaPhoneNumber extends BasePage{
-	
-	BaseClass bc=new BaseClass();
+
 	public SignupViaPhoneNumber(WebDriver driver) 
 	{
 		super(driver);
@@ -17,10 +16,17 @@ public class SignupViaPhoneNumber extends BasePage{
 	@FindBy(xpath="//span[normalize-space()='Email']") WebElement linkEmail;
 	@FindBy(xpath="//input[@id='regPhoneInput']") WebElement txtPhoneNum;
 	
-	public void setPhoneNum()
+	 public void setPhoneNum(String phone) throws InterruptedException 
 	{
-		txtPhoneNum.sendKeys(bc.generateUSPhoneNumber());
-	}
+	    txtPhoneNum.clear();
+	    for(char digit:phone.toCharArray()) 
+	    {
+	        txtPhoneNum.sendKeys(Character.toString(digit));
+	        Thread.sleep(100); // small delay so mask catches it
+	    }
+	    System.out.println("Phone entered: "+phone+" | Length: "+phone.length());
+	} 
+
 	
 	public void clickEmail()
 	{

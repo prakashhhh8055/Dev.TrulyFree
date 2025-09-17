@@ -8,7 +8,6 @@ import testBase.BaseClass;
 
 public class AccountInfo extends BasePage {
 
-		BaseClass bc=new BaseClass();
 		public AccountInfo(WebDriver driver) 
 		{
 			super(driver);
@@ -21,24 +20,24 @@ public class AccountInfo extends BasePage {
 		@FindBy(xpath="//input[@placeholder='Enter best email']") WebElement txtEmail;
 		@FindBy(xpath="//button[normalize-space()='DONE']") WebElement btnDone;
 		
-		public void setFirstName()
+		public void setFirstName(String firstName)
 		{
-			txtFirstName.sendKeys(bc.randomString());
+			txtFirstName.sendKeys(firstName);
 		}
 		
-		public void setLastName()
+		public void setLastName(String lastName)
 		{
-			txtLastName.sendKeys(bc.randomString());
+			txtLastName.sendKeys(lastName);
 		}
 		
-		public void setPhonenumber()
+		public void setPhonenumber(String usPhoneNum)
 		{
-			txtPhoneNumber.sendKeys(bc.generateUSPhoneNumber());
+			txtPhoneNumber.sendKeys(usPhoneNum);
 		}
 		
-		public void setEmail()
+		public void setEmail(String email)
 		{
-			txtEmail.sendKeys(bc.randomString()+"@gmail.com");
+			txtEmail.sendKeys(email);
 		}
 		
 		public void clickDone()

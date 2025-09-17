@@ -14,15 +14,15 @@ public class TC004_VerifyLoginViaEmail extends BaseClass {
 	public void VerifyLoginViaEmail() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
-		//hp.clickReject();
 		hp.clickLogin();
 
 		SigninViaPhoneNumber sp=new SigninViaPhoneNumber(driver);
 		sp.clickEmail();
-		
-		LoginViaEmail le=new LoginViaEmail(driver,p);
-		le.setEmail();
-		le.setPassword();
+		Thread.sleep(2000);
+		LoginViaEmail le=new LoginViaEmail(driver);
+		le.setEmail(p.getProperty("email"));
+		le.setPassword(p.getProperty("password"));
+		Thread.sleep(3000);
 		le.clickContinue();
 		
 		Assert.assertTrue(true);

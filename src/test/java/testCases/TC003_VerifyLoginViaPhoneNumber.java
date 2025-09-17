@@ -13,18 +13,17 @@ public class TC003_VerifyLoginViaPhoneNumber extends BaseClass {
 	public void VerifyLoginViaPhoneNumber() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);
-		hp.clickReject();
 		hp.clickLogin();
 		
 		Thread.sleep(2000);
 		
 		SigninViaPhoneNumber sp=new SigninViaPhoneNumber(driver);
-		sp.setPhoneNumber();
-		Thread.sleep(2000);
+		sp.setPhoneNumber(p.getProperty("phonenumber"));
+		Thread.sleep(3000);
 		sp.clickContinue();
-		
+		Thread.sleep(2000);
 		VerificationCode vc=new VerificationCode(driver);
-		vc.setOTP();
+		vc.setOTP(p.getProperty("otp"));
 	}
 
 }

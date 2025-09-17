@@ -1,35 +1,28 @@
 package pageObjects;
 
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import testBase.BaseClass;
-
 public class LoginViaEmail extends BasePage{
 
-	BaseClass bc=new BaseClass();
-	private Properties p;   // keep a reference
-	public LoginViaEmail(WebDriver driver,Properties p) 
+	public LoginViaEmail(WebDriver driver) 
 	{
 		super(driver);
-		this.p=p;
 	}
 	
 	@FindBy(xpath="//input[@id='standard-email']") WebElement txtEmail;
 	@FindBy(xpath="//input[@id='standard-password']") WebElement txtPassword;
 	@FindBy(xpath="//button[normalize-space()='CONTINUE']") WebElement btnContinue;
 	
-	public void setEmail()
+	public void setEmail(String email)
 	{
-		txtEmail.sendKeys(p.getProperty("email"));
+		txtEmail.sendKeys(email);
 	}
 
-	public void setPassword()
+	public void setPassword(String pwd)
 	{
-		txtPassword.sendKeys(p.getProperty("password"));
+		txtPassword.sendKeys(pwd);
 	}
 	
 	public void clickContinue()

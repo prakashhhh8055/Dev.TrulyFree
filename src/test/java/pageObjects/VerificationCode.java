@@ -15,9 +15,9 @@ public class VerificationCode extends BasePage{
 	@FindBy(xpath="//input[contains(@aria-label,'Please enter verification code. Digit 1')]") WebElement txtOTP;
 	
 	
-	public void setOTP()
+	public void setOTP(String otp)
 	{
-		txtOTP.sendKeys("1111");
+		txtOTP.sendKeys(otp);
 	}
 
 }

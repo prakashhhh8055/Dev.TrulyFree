@@ -88,15 +88,18 @@ public Logger logger;
 		String generatedNumbers=RandomStringUtils.randomNumeric(6);
 		return (generatedString+"@"+generatedNumbers);
 	}
-	
-	 public String generateUSPhoneNumber() {
-	        Random rand = new Random();
-	        int areaCode = rand.nextInt(800) + 200; // ensures 200–999
-	        int centralOffice = rand.nextInt(800) + 200;
-	        int lineNumber = rand.nextInt(10000); 
-	        
-	        return String.format("%03d-%03d-%04d", areaCode, centralOffice, lineNumber);
-	    }
+	 
+	public String generatePlainUSPhone() 
+	{
+	    Random rand=new Random();
+	    int areaCode=rand.nextInt(800)+200;       // 200–999
+	    int centralOffice=rand.nextInt(800)+200;  // 200–999
+	    int lineNumber=rand.nextInt(9000)+1000;   // 1000–9999 (avoids leading 0)
+	    
+	    return String.format("%03d%03d%04d",areaCode,centralOffice,lineNumber);
+	}
+
+
 	
 	public String captureScreen(String tname)
 	{
