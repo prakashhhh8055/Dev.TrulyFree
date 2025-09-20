@@ -12,7 +12,7 @@ import testBase.BaseClass;
 
 public class TC002_SignupViaPhoneNumberTest extends BaseClass{
 	
-	@Test
+	@Test(groups={"Regression","Sanity"})
 	public void verify_SignupViaPhoneNumber() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);

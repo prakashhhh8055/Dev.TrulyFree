@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC004_VerifyLoginViaEmail extends BaseClass {
 	
-	@Test
+	@Test(groups={"Regression","Smoke"})
 	public void VerifyLoginViaEmail() throws InterruptedException
 	{
 		HomePage hp=new HomePage(driver);

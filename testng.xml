@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-     	<!--<class name="testCases.TC001_SignupViaEmailTest"/>-->
-        <!--<class name="testCases.TC002_SignupViaPhoneNumberTest"/>-->
+     	<class name="testCases.TC001_SignupViaEmailTest"/>
+        <class name="testCases.TC002_SignupViaPhoneNumberTest"/>
         <class name="testCases.TC003_VerifyLoginViaPhoneNumber"/>
         <class name="testCases.TC004_VerifyLoginViaEmail"/>
     </classes>

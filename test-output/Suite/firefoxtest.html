@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  firefoxtest</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>firefoxtest</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 20 12:48:24 IST 2025</td>
+<td>Started on:</td><td>Sat Sep 20 13:36:07 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>98 seconds (98196 ms)</td>
+<tr><td>Total time:</td><td>118 seconds (118365 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.TC001_SignupViaEmailTest.verify_SignUpViaEmail()'><b>verify_SignUpViaEmail</b><br>Test class: testCases.TC001_SignupViaEmailTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]&quot;}
-  (Session info: chrome=140.0.7339.128)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[normalize-space()=&apos;Getting Started with Truly Free&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32c9ffc85b6720374ef5d0e1ad0c4d79, findElement {using=xpath, value=//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\3Embed\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62485/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32c9ffc85b6720374ef5d0e1ad0c4d79
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f585b0d-9fd0-4de7-be11-5fbee9058fe3, findElement {using=xpath, value=//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21712, moz:profile: C:\Users\3Embed\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f585b0d-9fd0-4de7-be11-5fbee9058fe3
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -99,20 +98,19 @@ Session ID: 32c9ffc85b6720374ef5d0e1ad0c4d79
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
 	at pageObjects.SignUpConfirmation.clickGettingStartedWithTF(SignUpConfirmation.java:35)
 	at testCases.TC001_SignupViaEmailTest.verify_SignUpViaEmail(TC001_SignupViaEmailTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2059282367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2059282367'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]&quot;}
-  (Session info: chrome=140.0.7339.128)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1797959612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1797959612'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[normalize-space()=&apos;Getting Started with Truly Free&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [32c9ffc85b6720374ef5d0e1ad0c4d79, findElement {using=xpath, value=//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\3Embed\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62485}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62485/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 32c9ffc85b6720374ef5d0e1ad0c4d79
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f585b0d-9fd0-4de7-be11-5fbee9058fe3, findElement {using=xpath, value=//button[normalize-space()=&apos;Getting Started with Truly Free&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21712, moz:profile: C:\Users\3Embed\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f585b0d-9fd0-4de7-be11-5fbee9058fe3
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -129,7 +127,7 @@ Session ID: 32c9ffc85b6720374ef5d0e1ad0c4d79
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
 	at pageObjects.SignUpConfirmation.clickGettingStartedWithTF(SignUpConfirmation.java:35)
 	at testCases.TC001_SignupViaEmailTest.verify_SignUpViaEmail(TC001_SignupViaEmailTest.java:45)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -159,19 +157,18 @@ Session ID: 32c9ffc85b6720374ef5d0e1ad0c4d79
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>22</td>
-<td>testCases.TC001_SignupViaEmailTest@610f7aa</td></tr>
+<td>21</td>
+<td>testCases.TC001_SignupViaEmailTest@3541cb24</td></tr>
 <tr>
 <td title='testCases.TC002_SignupViaPhoneNumberTest.verify_SignupViaPhoneNumber()'><b>verify_SignupViaPhoneNumber</b><br>Test class: testCases.TC002_SignupViaPhoneNumberTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]&quot;}
-  (Session info: chrome=140.0.7339.128)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e47106625ed29e9284bc6b45e77ca7f, findElement {using=xpath, value=//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\3Embed\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59996/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e47106625ed29e9284bc6b45e77ca7f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f5c5271-da8c-4d43-b307-f2714bd5ae32, findElement {using=xpath, value=//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30360, moz:profile: C:\Users\3Embed\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f5c5271-da8c-4d43-b307-f2714bd5ae32
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -185,20 +182,19 @@ Session ID: 7e47106625ed29e9284bc6b45e77ca7f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at pageObjects.VerificationCode.setOTP(VerificationCode.java:20)
 	at testCases.TC002_SignupViaPhoneNumberTest.verify_SignupViaPhoneNumber(TC002_SignupViaPhoneNumberTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089104518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089104518'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]&quot;}
-  (Session info: chrome=140.0.7339.128)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1402148539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1402148539'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7e47106625ed29e9284bc6b45e77ca7f, findElement {using=xpath, value=//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.185 (eeea00e459e..., userDataDir: C:\Users\3Embed\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59996}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59996/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e47106625ed29e9284bc6b45e77ca7f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [8f5c5271-da8c-4d43-b307-f2714bd5ae32, findElement {using=xpath, value=//input[contains(@aria-label,&apos;Please enter verification code. Digit 1&apos;)]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0, moz:accessibilityChecks: false, moz:buildID: 20250908174027, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30360, moz:profile: C:\Users\3Embed\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 8f5c5271-da8c-4d43-b307-f2714bd5ae32
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -215,7 +211,7 @@ Session ID: 7e47106625ed29e9284bc6b45e77ca7f
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.sendKeys(Unknown Source)
 	at pageObjects.VerificationCode.setOTP(VerificationCode.java:20)
 	at testCases.TC002_SignupViaPhoneNumberTest.verify_SignupViaPhoneNumber(TC002_SignupViaPhoneNumberTest.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -246,7 +242,7 @@ Session ID: 7e47106625ed29e9284bc6b45e77ca7f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>13</td>
-<td>testCases.TC002_SignupViaPhoneNumberTest@17a7f733</td></tr>
+<td>testCases.TC002_SignupViaPhoneNumberTest@2177849e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -257,15 +253,15 @@ Session ID: 7e47106625ed29e9284bc6b45e77ca7f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC004_VerifyLoginViaEmail.VerifyLoginViaEmail()'><b>VerifyLoginViaEmail</b><br>Test class: testCases.TC004_VerifyLoginViaEmail</td>
-<td></td>
-<td>7</td>
-<td>testCases.TC004_VerifyLoginViaEmail@76ed1b7c</td></tr>
-<tr>
 <td title='testCases.TC003_VerifyLoginViaPhoneNumber.VerifyLoginViaPhoneNumber()'><b>VerifyLoginViaPhoneNumber</b><br>Test class: testCases.TC003_VerifyLoginViaPhoneNumber</td>
 <td></td>
 <td>7</td>
-<td>testCases.TC003_VerifyLoginViaPhoneNumber@68567e20</td></tr>
+<td>testCases.TC003_VerifyLoginViaPhoneNumber@40cb8df7</td></tr>
+<tr>
+<td title='testCases.TC004_VerifyLoginViaEmail.VerifyLoginViaEmail()'><b>VerifyLoginViaEmail</b><br>Test class: testCases.TC004_VerifyLoginViaEmail</td>
+<td></td>
+<td>6</td>
+<td>testCases.TC004_VerifyLoginViaEmail@13b13b5d</td></tr>
 </table><p>
 </body>
 </html>

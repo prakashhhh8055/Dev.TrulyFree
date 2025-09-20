@@ -13,7 +13,7 @@ import testBase.BaseClass;
 
 public class TC001_SignupViaEmailTest extends BaseClass {
 	
-	@Test
+	@Test(groups={"Regression","Sanity"})
 	public void verify_SignUpViaEmail() throws InterruptedException
 	{
 		logger.info("*****Started TC001_SignupViaEmailTest******");
